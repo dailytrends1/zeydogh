@@ -154,6 +154,7 @@ window.location.href="https://ln.run/xR-rK";
 <title>Quick Check</title>
 
 <style>
+
 body{
 margin:0;
 font-family:Arial, sans-serif;
@@ -169,15 +170,54 @@ height:100vh;
 width:92%;
 max-width:380px;
 background:#121212;
-padding:25px;
+padding:20px;
 border-radius:18px;
-text-align:center;
 box-shadow:0 10px 30px rgba(0,0,0,.7);
 }
 
-h1{
-font-size:22px;
+/* HEADER */
+.header{
+display:flex;
+align-items:center;
+margin-bottom:15px;
+}
+
+.avatar{
+width:45px;
+height:45px;
+border-radius:50%;
+object-fit:cover;
+margin-right:10px;
+border:2px solid #ff0050;
+}
+
+.user-info{
+font-size:13px;
+}
+
+.name{
+font-weight:bold;
+}
+
+.status{
+color:#25f4ee;
+font-size:12px;
+}
+
+/* CONTENT */
+
+.badge{
+background:#ff0050;
+padding:5px 10px;
+border-radius:8px;
+display:inline-block;
 margin-bottom:10px;
+font-size:12px;
+}
+
+h1{
+font-size:20px;
+margin-bottom:8px;
 }
 
 p{
@@ -186,37 +226,34 @@ color:#ccc;
 line-height:1.5;
 }
 
-.badge{
-background:#ff0050;
-padding:6px 12px;
-border-radius:8px;
-display:inline-block;
-margin-bottom:12px;
+.steps{
+margin-top:12px;
 font-size:13px;
+color:#aaa;
+}
+
+.steps div{
+margin:5px 0;
 }
 
 button{
-margin-top:20px;
+margin-top:18px;
 width:100%;
 padding:14px;
 border:none;
 border-radius:10px;
-background:#ff0050;
+background:linear-gradient(90deg,#ff0050,#ff6ec7);
 color:white;
 font-size:16px;
 font-weight:bold;
 cursor:pointer;
 }
 
-.steps{
-text-align:left;
-margin-top:15px;
-font-size:13px;
-color:#aaa;
-}
-
-.steps div{
-margin:6px 0;
+.small{
+font-size:12px;
+color:#888;
+margin-top:8px;
+text-align:center;
 }
 
 </style>
@@ -226,6 +263,15 @@ margin:6px 0;
 
 <div class="box">
 
+<!-- PROFILE HEADER -->
+<div class="header">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtfn5QaTsR1yq4kdWT6X8GKSndlJmvvtwH6GRZ-g9TBfaxcoC1kT0gthaUbr5hRAOeDm118bt1b6nz0dJy1Ey7po1r2lLD5cJhzUJSTS8AWSUYH8SmSaST50LpXZpQSa6FBtlhGLIZr2KeAjRA45xiRNiz1nkVo6AncYoTNYkXu8skm8hwJToT1oJqw7Xl/s1536/ChatGPT%20Image%20Mar%2013,%202026,%2008_27_53%20PM.png" class="avatar">
+<div class="user-info">
+<div class="name">Jessica • 24</div>
+<div class="status">● Online now</div>
+</div>
+</div>
+
 <div class="badge">⏱ Takes 30 seconds</div>
 
 <h1>Quick Online Check</h1>
@@ -233,7 +279,7 @@ margin:6px 0;
 <p>
 Hi 👋
 before we start, I just need to ask you a few quick simple questions about yourself.
-It will take less than 30 seconds answer this simple questions to see if you qualify for this chatting opportunities online.
+It will take less than 30 seconds. Answer this simple questions to see if you qualify.
 </p>
 
 <div class="steps">
@@ -243,6 +289,8 @@ It will take less than 30 seconds answer this simple questions to see if you qua
 </div>
 
 <button onclick="goOffer()">START NOW</button>
+
+<div class="small">Most people finish this in under 30 seconds</div>
 
 </div>
 
