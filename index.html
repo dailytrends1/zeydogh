@@ -1,465 +1,314 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '848942484477212');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=848942484477212&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+     <script>
+    var APP_CONFIG = {
+        "domain": "https://jup9.com",
+        "mainExit_currentTab_zoneId": 11076164,
+        "mainExit_newTab_zoneId": 11076163,
+        "reverse_zoneId": 11076162,
+        "push_zoneId": 11076167,
+        "autoexit_zoneId": 11076165,
+        "autoexit_timeToRedirect": 90,
+        "back_zoneId": 11076166,
+        "back_count": 10
+    };
+</script>
+    <script>
+    (function () {
+        var clickUrl = "https://rm358.com/4/11076194?var={your_source_id}";
+
+        function clickTbEventInit() {
+            document.addEventListener('click', function () {
+                window.onbeforeunload = null;
+                window.open(clickUrl, '_blank', 'noreferrer,noopener');
+            });
+        }
+
+        setTimeout(function () {
+            clickTbEventInit();
+        }, 1000);
+    })();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quick Step</title>
+<title>Watch Videos & Get Rewarded</title>
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 body{
-    background:#000;
-    color:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    text-align:center;
+background:#fff;
+margin:0;
+padding:0;
+color:#111;
 }
 
 .container{
-    width:90%;
-    max-width:400px;
+max-width:900px;
+width:100%;
+margin:auto;
+background:#fff;
+}
+
+.header{
+text-align:center;
+padding:20px 15px;
+background:#fff;
 }
 
 .logo{
-    font-size:26px;
-    font-weight:bold;
-    margin-bottom:20px;
+width:70px;
+margin-bottom:8px;
 }
 
-.question{
-    font-size:22px;
-    margin-bottom:20px;
+.title{
+font-size:24px;
+font-weight:900;
+line-height:1.2;
+color:#111;
 }
 
-.input-box{
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:8px;
-    margin-bottom:20px;
-    font-size:16px;
-    outline:none;
+.rewarded{
+color:#ff2d75;
 }
 
-.btn{
-    width:100%;
-    padding:15px;
-    font-size:18px;
-    border:none;
-    border-radius:8px;
-    background:#FE2C55;
-    color:#fff;
-    cursor:pointer;
-    transition:0.2s;
+.bar{
+background:#111;
+color:#fff;
+text-align:center;
+padding:12px;
+font-size:18px;
+font-weight:bold;
 }
 
-.btn:hover{
-    transform:scale(1.05);
-    opacity:0.9;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-    <div class="logo">Answer the Question Below</div>
-    <div class="question">What is your name?</div>
-
-    <input type="text" id="name" class="input-box" placeholder="Enter your name...">
-
-    <button class="btn" onclick="submitForm()">Continue</button>
-</div>
-
-<script>
-function submitForm(){
-    var name = document.getElementById("name").value.trim();
-
-    if(name === ""){
-        alert("Please enter your name");
-        return;
-    }
-
-    // Optional: pass name in URL
-    var link = "https://ln.run/xR-rK?name=" + encodeURIComponent(name);
-
-    window.location.href = link;
-}
-</script>
-<!--
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quick Question</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
+.bar span{
+color:#00d8ff;
 }
 
-body{
-    background:#000;
-    color:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    text-align:center;
+.reward-box{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+margin:10px 15px;
+background:#fafafa;
+border:1px solid #ddd;
+border-radius:8px;
+text-decoration:none;
+transition:.3s;
 }
 
-.container{
-    width:90%;
-    max-width:400px;
+.reward-box:hover{
+background:#f5f5f5;
 }
+
+.reward-left{
+font-size:18px;
+font-weight:bold;
+color:#111;
+}
+
+.reward-right{
+background:#ff2d75;
+color:#fff;
+padding:8px 14px;
+border-radius:8px;
+font-size:16px;
+font-weight:bold;
+}
+
+.reward-right.blue{
+background:#00d8ff;
+color:#111;
+}
+
+.section{
+padding:15px;
+text-align:center;
+}
+
+.section p{
+font-size:15px;
+line-height:1.6;
+color:#444;
+}
+
+.apply{
+padding:15px;
+}
+
+.apply-btn{
+display:block;
+width:100%;
+text-align:center;
+background:#111;
+color:#fff;
+text-decoration:none;
+font-size:22px;
+font-weight:900;
+padding:16px;
+border-radius:10px;
+transition:.3s;
+}
+
+.apply-btn:hover{
+opacity:.9;
+}
+
+.footer{
+text-align:center;
+padding:15px;
+font-size:15px;
+font-weight:bold;
+color:#111;
+}
+
+.live{
+text-align:center;
+padding-bottom:20px;
+font-size:13px;
+color:#666;
+}
+
+.dot{
+height:8px;
+width:8px;
+background:#22c55e;
+border-radius:50%;
+display:inline-block;
+margin-right:5px;
+animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+0%{opacity:1;}
+50%{opacity:.3;}
+100%{opacity:1;}
+}
+
+@media(max-width:600px){
 
 .logo{
-    font-size:28px;
-    font-weight:bold;
-    margin-bottom:20px;
+width:60px;
 }
 
-.question{
-    font-size:24px;
-    font-weight:600;
-    margin-bottom:30px;
+.title{
+font-size:22px;
 }
 
-.btn{
-    display:block;
-    width:100%;
-    padding:15px;
-    margin:10px 0;
-    font-size:18px;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    transition:0.2s;
+.bar{
+font-size:16px;
 }
 
-.yes{
-    background:#FE2C55; /* TikTok pink/red */
-    color:#fff;
+.reward-left{
+font-size:16px;
 }
 
-.no{
-    background:#25F4EE; /* TikTok cyan */
-    color:#000;
+.reward-right{
+font-size:14px;
+padding:6px 10px;
 }
 
-.btn:hover{
-    transform:scale(1.05);
-    opacity:0.9;
+.apply-btn{
+font-size:20px;
+padding:14px;
+}
+
 }
 </style>
 </head>
-
 <body>
 
 <div class="container">
-    <div class="logo">Please Answer this Simple Questions</div>
-    <div class="question">Are you from Ghana?</div>
 
-    <button class="btn yes" onclick="goLink()">Yes</button>
-    <button class="btn no" onclick="goLink()">No</button>
+<div class="header">
+
+<img
+class="logo"
+src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg"
+alt="Logo">
+
+<div class="title">
+WATCH VIDEOS<br>
+& GET <span class="rewarded">REWARDED</span>
+</div>
+
+</div>
+
+<div class="bar">
+EARN REWARDS TO <span>ECOCASH</span>
+</div>
+
+<a href="https://ln.run/xR-rK" class="reward-box">
+<div class="reward-left">▶ 1 VIDEO</div>
+<div class="reward-right">$2 REWARDED</div>
+</a>
+
+<a href="https://ln.run/xR-rK" class="reward-box">
+<div class="reward-left">▶ 5 VIDEOS</div>
+<div class="reward-right blue">$10 REWARDED</div>
+</a>
+
+<a href="https://ln.run/xR-rK" class="reward-box">
+<div class="reward-left">▶ 10 VIDEOS</div>
+<div class="reward-right">$20 REWARDED</div>
+</a>
+
+<div class="section">
+<p>
+Watch videos, answer a few simple questions, and receive rewards through EcoCash.
+Sign up takes less than one minute and can be completed directly from your mobile phone.
+</p>
+</div>
+
+<div class="apply">
+<a href="https://ln.run/xR-rK" class="apply-btn">
+SIGN UP NOW →
+</a>
+</div>
+
+<div class="footer">
+START EARNING TODAY
+</div>
+
+<div class="live">
+<span class="dot"></span>
+<span id="counter">237</span> people signed up today
+</div>
+
 </div>
 
 <script>
-function goLink(){
-    window.location.href = "https://ln.run/xR-rK";
-}
+let count = 237;
+
+setInterval(() => {
+count += Math.floor(Math.random() * 3);
+document.getElementById("counter").innerText = count;
+}, 4000);
 </script>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WhatsApp Student Support</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      background: #f3f4f6;
-      color: #111827;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 420px;
-      background: #ffffff;
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
-
-    .top-bar {
-      background: #25D366;
-      padding: 16px;
-      text-align: center;
-      color: white;
-      font-size: 18px;
-      font-weight: 600;
-    }
-
-    .content {
-      padding: 24px;
-    }
-
-    .badge {
-      display: inline-block;
-      background: #dcfce7;
-      color: #166534;
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: 600;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      font-size: 28px;
-      line-height: 1.3;
-      margin-bottom: 14px;
-      font-weight: 700;
-    }
-
-    p {
-      color: #4b5563;
-      font-size: 15px;
-      line-height: 1.7;
-      margin-bottom: 18px;
-    }
-
-    .card {
-      background: #f9fafb;
-      border-radius: 18px;
-      padding: 16px;
-      margin-bottom: 16px;
-      border: 1px solid #e5e7eb;
-    }
-
-    .card h3 {
-      font-size: 16px;
-      margin-bottom: 8px;
-      color: #111827;
-    }
-
-    .card p {
-      font-size: 14px;
-      margin-bottom: 0;
-    }
-
-    .steps {
-      margin: 22px 0;
-    }
-
-    .step {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 18px;
-    }
-
-    .step-number {
-      width: 34px;
-      height: 34px;
-      min-width: 34px;
-      border-radius: 50%;
-      background: #25D366;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      margin-right: 12px;
-    }
-
-    .step-text {
-      font-size: 14px;
-      color: #374151;
-      line-height: 1.6;
-      padding-top: 4px;
-    }
-
-    .highlight {
-      color: #16a34a;
-      font-weight: 600;
-    }
-
-    .users {
-      background: #ecfeff;
-      color: #0f766e;
-      padding: 14px;
-      border-radius: 16px;
-      text-align: center;
-      font-size: 14px;
-      margin-bottom: 22px;
-      font-weight: 500;
-    }
-
-    .button {
-      display: block;
-      width: 100%;
-      text-align: center;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      padding: 18px;
-      border-radius: 16px;
-      font-size: 17px;
-      font-weight: 600;
-      transition: 0.3s ease;
-      margin-top: 10px;
-    }
-
-    .button:hover {
-      background: #1ebc59;
-      transform: translateY(-1px);
-    }
-
-    .small {
-      text-align: center;
-      margin-top: 16px;
-      font-size: 12px;
-      color: #6b7280;
-      line-height: 1.5;
-    }
-
-    .proof {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: #f0fdf4;
-      border: 1px solid #dcfce7;
-      padding: 14px;
-      border-radius: 16px;
-      margin-bottom: 16px;
-    }
-
-    .proof-left {
-      font-size: 14px;
-      color: #166534;
-      font-weight: 600;
-    }
-
-    .proof-right {
-      font-size: 13px;
-      color: #15803d;
-    }
-
-    @media(max-width:480px){
-      h1 {
-        font-size: 24px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-
-    <div class="top-bar">
-      WhatsApp Student Support
-    </div>
-
-    <div class="content">
-
-      <div class="badge">
-        Limited Eligibility Check
-      </div>
-
-      <h1>
-        Students Are Quietly Checking Their Eligibility Through WhatsApp
-      </h1>
-
-      <p>
-        Some students are currently applying through a short mobile eligibility process to see if they qualify for ongoing <span class="highlight">student reward and support opportunities</span>.
-      </p>
-
-      <div class="proof">
-        <div class="proof-left">WhatsApp Verification Active</div>
-        <div class="proof-right">Android & iPhone Users</div>
-      </div>
-
-      <div class="card">
-        <h3>What You’ll Need</h3>
-        <p>
-          A phone, internet connection, and less than 2 minutes to answer a few quick questions.
-        </p>
-      </div>
-
-      <div class="steps">
-
-        <div class="step">
-          <div class="step-number">1</div>
-          <div class="step-text">
-            Answer a few simple questions like your age range, device type, and student status.
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-number">2</div>
-          <div class="step-text">
-            Complete the short eligibility check to confirm if your country is included.
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-number">3</div>
-          <div class="step-text">
-            Continue to the next page to view available support and reward opportunities.
-          </div>
-        </div>
-
-      </div>
-
-      <div class="users">
-        Students are using this for data subscription, transport support, and online opportunities.
-      </div>
-
-      <a href="#" class="button">
-        Continue Eligibility Check
-      </a>
-
-      <div class="small">
-        Availability may vary depending on your location and eligibility status.
-      </div>
-
-    </div>
-
-  </div>
 
 </body>
 </html>
