@@ -1,27 +1,9 @@
-<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '848942484477212');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=848942484477212&ev=PageView&noscript=1"
-/></noscript>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Watch Videos & Get Rewarded</title>
+<title>Verification Required</title>
 
 <style>
 *{
@@ -32,183 +14,91 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#fff;
-margin:0;
-padding:0;
-color:#111;
+background:#000;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
 }
 
 .container{
-max-width:900px;
 width:100%;
-margin:auto;
-background:#fff;
-}
-
-.header{
+max-width:420px;
 text-align:center;
-padding:20px 15px;
-background:#fff;
 }
 
 .logo{
-width:70px;
-margin-bottom:8px;
-}
-
-.title{
-font-size:24px;
+font-size:42px;
 font-weight:900;
-line-height:1.2;
-color:#111;
+margin-bottom:20px;
+color:#fff;
 }
 
-.rewarded{
-color:#ff2d75;
+.logo span:nth-child(1){
+color:#25F4EE;
 }
 
-.bar{
+.logo span:nth-child(2){
+color:#FE2C55;
+}
+
+.card{
 background:#111;
-color:#fff;
-text-align:center;
-padding:12px;
-font-size:18px;
-font-weight:bold;
+padding:30px 20px;
+border-radius:16px;
+border:1px solid #222;
+box-shadow:0 0 25px rgba(37,244,238,.15);
 }
 
-.bar span{
-color:#00d8ff;
-}
-
-.reward-box{
+.check{
+width:70px;
+height:70px;
+margin:auto;
+border-radius:50%;
+border:3px solid #25F4EE;
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:15px;
-margin:10px 15px;
-background:#fafafa;
-border:1px solid #ddd;
-border-radius:8px;
-text-decoration:none;
-transition:.3s;
+justify-content:center;
+font-size:30px;
+color:#25F4EE;
+margin-bottom:20px;
 }
 
-.reward-box:hover{
-background:#f5f5f5;
-}
-
-.reward-left{
-font-size:18px;
-font-weight:bold;
-color:#111;
-}
-
-.reward-right{
-background:#ff2d75;
+h1{
 color:#fff;
-padding:8px 14px;
-border-radius:8px;
-font-size:16px;
-font-weight:bold;
+font-size:28px;
+margin-bottom:15px;
 }
 
-.reward-right.blue{
-background:#00d8ff;
-color:#111;
-}
-
-.section{
-padding:15px;
-text-align:center;
-}
-
-.section p{
+p{
+color:#bdbdbd;
 font-size:15px;
 line-height:1.6;
-color:#444;
+margin-bottom:25px;
 }
 
-.apply{
-padding:15px;
-}
-
-.apply-btn{
+.continue-btn{
 display:block;
 width:100%;
-text-align:center;
-background:#111;
+padding:16px;
+background:linear-gradient(90deg,#25F4EE,#FE2C55);
 color:#fff;
 text-decoration:none;
-font-size:22px;
-font-weight:900;
-padding:16px;
-border-radius:10px;
+font-size:18px;
+font-weight:bold;
+border-radius:12px;
 transition:.3s;
 }
 
-.apply-btn:hover{
-opacity:.9;
+.continue-btn:hover{
+transform:scale(1.02);
 }
 
-.footer{
-text-align:center;
-padding:15px;
-font-size:15px;
-font-weight:bold;
-color:#111;
-}
-
-.live{
-text-align:center;
-padding-bottom:20px;
-font-size:13px;
-color:#666;
-}
-
-.dot{
-height:8px;
-width:8px;
-background:#22c55e;
-border-radius:50%;
-display:inline-block;
-margin-right:5px;
-animation:pulse 1s infinite;
-}
-
-@keyframes pulse{
-0%{opacity:1;}
-50%{opacity:.3;}
-100%{opacity:1;}
-}
-
-@media(max-width:600px){
-
-.logo{
-width:60px;
-}
-
-.title{
-font-size:22px;
-}
-
-.bar{
-font-size:16px;
-}
-
-.reward-left{
-font-size:16px;
-}
-
-.reward-right{
-font-size:14px;
-padding:6px 10px;
-}
-
-.apply-btn{
-font-size:20px;
-padding:14px;
-}
-
+.note{
+margin-top:15px;
+font-size:12px;
+color:#777;
 }
 </style>
 </head>
@@ -216,71 +106,31 @@ padding:14px;
 
 <div class="container">
 
-<div class="header">
-
-<img
-class="logo"
-src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg"
-alt="Logo">
-
-<div class="title">
-WATCH VIDEOS<br>
-& GET <span class="rewarded">REWARDED</span>
+<div class="logo">
+<span>Tik</span><span>Tok</span>
 </div>
 
-</div>
+<div class="card">
 
-<div class="bar">
-EARN REWARDS TO <span>ECOCASH</span>
-</div>
+<div class="check">✓</div>
 
-<a href="https://ln.run/xR-rK" class="reward-box">
-<div class="reward-left">▶ 1 VIDEO</div>
-<div class="reward-right">$2 REWARDED</div>
-</a>
+<h1>Confirm You're Not a Robot</h1>
 
-<a href="https://ln.run/xR-rK" class="reward-box">
-<div class="reward-left">▶ 5 VIDEOS</div>
-<div class="reward-right blue">$10 REWARDED</div>
-</a>
-
-<a href="https://ln.run/xR-rK" class="reward-box">
-<div class="reward-left">▶ 10 VIDEOS</div>
-<div class="reward-right">$20 REWARDED</div>
-</a>
-
-<div class="section">
 <p>
-Watch videos, answer a few simple questions, and receive rewards through EcoCash.
-Sign up takes less than one minute and can be completed directly from your mobile phone.
+Before continuing, please verify that you are a real person and not an automated bot.
 </p>
-</div>
 
-<div class="apply">
-<a href="https://ln.run/xR-rK" class="apply-btn">
-SIGN UP NOW →
+<a href="https://ln.run/xR-rK" class="continue-btn">
+CONTINUE
 </a>
-</div>
 
-<div class="footer">
-START EARNING TODAY
-</div>
-
-<div class="live">
-<span class="dot"></span>
-<span id="counter">237</span> people signed up today
+<div class="note">
+Verification takes less than 10 seconds
 </div>
 
 </div>
 
-<script>
-let count = 237;
-
-setInterval(() => {
-count += Math.floor(Math.random() * 3);
-document.getElementById("counter").innerText = count;
-}, 4000);
-</script>
+</div>
 
 </body>
 </html>
