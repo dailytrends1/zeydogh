@@ -20,134 +20,407 @@ src="https://www.facebook.com/tr?id=848942484477212&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Verification Required</title>
+<title>Watch Videos & Earn Rewards</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#000;
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:20px;
+background:#f7f7f7;
+color:#111;
 }
 
 .container{
-width:100%;
-max-width:420px;
+max-width:500px;
+margin:auto;
+background:#fff;
+min-height:100vh;
+}
+
+.hero{
+background:#fff;
+padding:30px 20px;
 text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+top:-100px;
+left:-100px;
+width:250px;
+height:250px;
+background:#25F4EE;
+opacity:.15;
+border-radius:50%;
+}
+
+.hero::after{
+content:'';
+position:absolute;
+bottom:-100px;
+right:-100px;
+width:250px;
+height:250px;
+background:#FE2C55;
+opacity:.15;
+border-radius:50%;
 }
 
 .logo{
-font-size:42px;
-font-weight:900;
-margin-bottom:20px;
-color:#fff;
+font-size:20px;
+font-weight:800;
+margin-bottom:10px;
+position:relative;
+z-index:2;
 }
 
-.logo span:nth-child(1){
-color:#25F4EE;
-}
-
-.logo span:nth-child(2){
+.logo span{
 color:#FE2C55;
 }
 
-.card{
-background:#111;
-padding:30px 20px;
-border-radius:16px;
-border:1px solid #222;
-box-shadow:0 0 25px rgba(37,244,238,.15);
+h1{
+font-size:42px;
+font-weight:800;
+line-height:1.1;
+margin-bottom:10px;
+position:relative;
+z-index:2;
 }
 
-.check{
-width:70px;
-height:70px;
-margin:auto;
+.highlight{
+color:#FE2C55;
+}
+
+.sub{
+font-size:16px;
+color:#666;
+margin-bottom:25px;
+position:relative;
+z-index:2;
+}
+
+.hero-btn{
+display:inline-block;
+background:#000;
+color:#fff;
+padding:18px 40px;
+border-radius:15px;
+font-size:20px;
+font-weight:700;
+text-decoration:none;
+box-shadow:0 0 25px rgba(254,44,85,.4);
+position:relative;
+z-index:2;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+padding:20px;
+}
+
+.stat{
+background:#fff;
+border-radius:15px;
+padding:15px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.stat h3{
+color:#FE2C55;
+font-size:22px;
+}
+
+.section{
+padding:20px;
+}
+
+.section-title{
+font-size:28px;
+font-weight:800;
+margin-bottom:20px;
+text-align:center;
+}
+
+.card{
+background:#fff;
+border-radius:18px;
+padding:18px;
+margin-bottom:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+border-left:6px solid #25F4EE;
+}
+
+.card h3{
+margin-bottom:8px;
+}
+
+.card p{
+color:#666;
+font-size:14px;
+}
+
+.steps{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.step{
+display:flex;
+align-items:center;
+gap:15px;
+background:#fff;
+padding:15px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.number{
+width:45px;
+height:45px;
 border-radius:50%;
-border:3px solid #25F4EE;
+background:#FE2C55;
+color:#fff;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:30px;
-color:#25F4EE;
-margin-bottom:20px;
+font-weight:700;
 }
 
-h1{
-color:#fff;
-font-size:28px;
+.benefits{
+display:grid;
+gap:12px;
+}
+
+.benefit{
+background:#000;
+color:white;
+padding:16px;
+border-radius:14px;
+font-weight:600;
+}
+
+.cta{
+background:#000;
+color:white;
+padding:40px 20px;
+text-align:center;
+margin-top:20px;
+}
+
+.cta h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.cta p{
+margin-bottom:25px;
+color:#ccc;
+}
+
+.signup-btn{
+display:inline-block;
+background:#FE2C55;
+padding:18px 50px;
+border-radius:15px;
+font-size:24px;
+font-weight:800;
+text-decoration:none;
+color:white;
+box-shadow:0 0 30px rgba(254,44,85,.6);
+}
+
+.footer{
+padding:25px;
+text-align:center;
+font-size:12px;
+color:#888;
+}
+
+.badge{
+display:inline-block;
+background:#25F4EE;
+padding:8px 15px;
+border-radius:30px;
+font-size:13px;
+font-weight:700;
 margin-bottom:15px;
 }
 
-p{
-color:#bdbdbd;
-font-size:15px;
-line-height:1.6;
-margin-bottom:25px;
-}
-
-.continue-btn{
-display:block;
-width:100%;
-padding:16px;
-background:linear-gradient(90deg,#25F4EE,#FE2C55);
-color:#fff;
-text-decoration:none;
-font-size:18px;
-font-weight:bold;
-border-radius:12px;
-transition:.3s;
-}
-
-.continue-btn:hover{
-transform:scale(1.02);
-}
-
-.note{
-margin-top:15px;
-font-size:12px;
-color:#777;
-}
 </style>
 </head>
+
 <body>
 
 <div class="container">
 
+<section class="hero">
+
 <div class="logo">
-<span>Tik</span><span>Tok</span>
+VIDEO <span>REWARDS</span>
+</div>
+
+<div class="badge">
+AVAILABLE ON MOBILE
+</div>
+
+<h1>
+WATCH VIDEOS <br>
+<span class="highlight">& GET REWARDS</span>
+</h1>
+
+<p class="sub">
+Explore available video reward opportunities directly from your mobile phone.
+</p>
+
+<a href="#" class="hero-btn">
+SIGN UP
+</a>
+
+</section>
+
+<div class="stats">
+
+<div class="stat">
+<h3>60s</h3>
+<p>Setup</p>
+</div>
+
+<div class="stat">
+<h3>24/7</h3>
+<p>Access</p>
+</div>
+
+<div class="stat">
+<h3>Mobile</h3>
+<p>Friendly</p>
+</div>
+
+</div>
+
+<section class="section">
+
+<h2 class="section-title">
+Why Join?
+</h2>
+
+<div class="card">
+<h3>🎥 Watch Videos</h3>
+<p>Access available video activities directly from your device.</p>
 </div>
 
 <div class="card">
-
-<div class="check">✓</div>
-
-<h1>Confirm You're Not a Robot</h1>
-
-<p>
-Before continuing, please verify that you are a real person and not an automated bot.
-</p>
-
-<a href="https://ln.run/xR-rK" class="continue-btn">
-CONTINUE
-</a>
-
-<div class="note">
-Verification takes less than 10 seconds
+<h3>🎁 Reward Opportunities</h3>
+<p>Eligible users may access available reward opportunities.</p>
 </div>
 
+<div class="card">
+<h3>📱 Mobile Friendly</h3>
+<p>Works on Android and iPhone devices.</p>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+How It Works
+</h2>
+
+<div class="steps">
+
+<div class="step">
+<div class="number">1</div>
+<div>Create Your Account</div>
+</div>
+
+<div class="step">
+<div class="number">2</div>
+<div>Complete Verification</div>
+</div>
+
+<div class="step">
+<div class="number">3</div>
+<div>Explore Available Activities</div>
+</div>
+
+<div class="step">
+<div class="number">4</div>
+<div>Access Reward Opportunities</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Benefits
+</h2>
+
+<div class="benefits">
+
+<div class="benefit">
+✓ Quick Registration Process
+</div>
+
+<div class="benefit">
+✓ Mobile Friendly Platform
+</div>
+
+<div class="benefit">
+✓ Flexible Participation
+</div>
+
+<div class="benefit">
+✓ Available Reward Opportunities
+</div>
+
+<div class="benefit">
+✓ Fast Account Setup
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>
+Ready To Start?
+</h2>
+
+<p>
+Create your account and explore available opportunities today.
+</p>
+
+<a href="#" class="signup-btn">
+SIGN UP
+</a>
+
+</section>
+
+<div class="footer">
+© 2026 Video Rewards Platform. All Rights Reserved.
 </div>
 
 </div>
 
 </body>
 </html>
+
